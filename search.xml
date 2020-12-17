@@ -1,9 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>My New Post</title>
-    <url>/2020/12/16/My-New-Post/</url>
-    <content><![CDATA[]]></content>
+    <title></title>
+    <url>/2020/12/17/Linux/</url>
+    <content><![CDATA[<h1 id="一、Linux"><a href="#一、Linux" class="headerlink" title="一、Linux"></a>一、Linux</h1><ul>
+<li>排除断网</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ip a</span><br><span class="line">ping www.baidu.com</span><br><span class="line">cat  &#x2F;etc&#x2F;resolv.conf</span><br><span class="line">cat &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-eth0</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>nginx启动、停止、重启</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;usr&#x2F;local&#x2F;nginx&#x2F;sbin&#x2F;nginx （启动）</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;nginx&#x2F;sbin&#x2F;nginx -s stop （停止）</span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;nginx&#x2F;sbin&#x2F;nginx -s reload （重启）</span><br></pre></td></tr></table></figure></li>
+<li><p>通过ps命令查看nginx文件的路径</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ps -elf | grep nginx</span><br></pre></td></tr></table></figure></li>
+<li><p>删除/tmp目录中超过一天未使用的文件</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">tmpwatch 24 &#x2F;tmp&#x2F; </span><br></pre></td></tr></table></figure></li>
+<li><p>查看文件夹大小并按大小进行排序详解</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">du -s * | sort -nr | head 选出排在前面的10个</span><br></pre></td></tr></table></figure></li>
+<li><p>若您执行fdisk -l命令，发现没有/dev/xvdb,说明您的云服务无数据盘，那么您无需进行挂载</p>
+</li>
+<li><p>Php重启 /etc/init.d/php-fpm restart </p>
+</li>
+<li><p>Mysql禁止远程访问 /etc/my.cnf   [mysqld]下加一行skip-networking</p>
+</li>
+<li><p>fsck –y  修复磁盘</p>
+</li>
+<li><p>G01软件卸载 ps -ef | grep gov 查看是否有进程，cd /usr/local/gov_defence_agent,然后./agent_smart_tool.sh -u 用户名 -p 密码，然后./uninstall卸载</p>
+</li>
+<li><p>网站维护中，nginx加入代码rewrite ^(.*) /weihu.html break;</p>
+</li>
+<li><p>nginx去掉url中的index.php,配置Nginx.conf在你的虚拟主机下添加：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">location &#x2F; &#123;</span><br><span class="line">     if (!-e $request_filename)&#123;</span><br><span class="line">          rewrite ^&#x2F;(.*)$ &#x2F;index.php&#x2F;$1 last;</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>使用top查看进程维度的CPU负载,在界面输入大小字母 P，来使监控结果按 CPU 使用率倒序排列.</p>
+</li>
+<li><p>服务器安全狗卸载</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chmod +x uninstall.py</span><br><span class="line">.&#x2F;uninstall.py</span><br></pre></td></tr></table></figure></li>
+<li><p>Linux下如何关闭mysql的3306端口,#vi/etc/my.cnf 在[mysqld]下添加 skip-networking<br>重启MYSQL： #service mysqld stop #service mysqldstart 即可关闭3306端口<br>本地程序可以通过mysql.sock来连接，不影响使用，既提高了访问速度，又提高了安全性，避免远程连接mysql数据库</p>
+</li>
+<li><p>linux下给目录下所有子目录和文件赋权 </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chmod -R 777 目录名</span><br></pre></td></tr></table></figure></li>
+<li><p>llinux修复挂载点，首先卸载当前挂载的目录，root用户执行 umount /mnt，注意当前用户不要位于/mnt目录下，不能有应用正在使用/mnt目录。<br>然后重新挂载/dev/xvdb1到新的目录，比如挂载到/test目录：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">mkdir &#x2F;test</span><br><span class="line">mount &#x2F;dev&#x2F;xvdb1 &#x2F;test</span><br></pre></td></tr></table></figure></li>
+<li><p>关闭SELinux的方法<br>修改/etc/selinux/config文件中设置SELINUX=disabled ，然后重启服务器。</p>
+</li>
+<li><p>如果不想启用nginx日志，则使用： access_log off ;</p>
+</li>
+<li><p>mysql如何查看那些表数据量超大</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">use information_schema;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">select table_name,table_rows from tables </span><br><span class="line">where TABLE_SCHEMA &#x3D; &#39;您的数据库名字&#39; </span><br><span class="line">order by table_rows desc;</span><br></pre></td></tr></table></figure></li>
+<li><p>linux系统挂载数据盘的方法 <a href="https://www.jb51.net/article/122174.htm">https://www.jb51.net/article/122174.htm</a></p>
+</li>
+<li><p>linux下建立软链接,类似于windows下的快捷方式</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ln -s a b  a 就是源文件，b是链接文件名,其作用是当进入b,值得注意的是a目录已经建立，目录b没有建立</span><br><span class="line">rm -rf  b  注意不是rm -rf  b&#x2F;  删除软链接</span><br></pre></td></tr></table></figure></li>
+<li><p>g01更换绑定帐号</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">  cd &#x2F;usr&#x2F;local&#x2F;gov_defence_agent</span><br><span class="line">.&#x2F;yunsuo_smart_tool.sh –u 用户名 –p密码</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>zip命令   打包/home/images目录到/home/images.zip<br>　　# zip -r /home/images.zip /home/images</p>
+</li>
+<li><p>rm命令   删除 subfolder 下所有文件及文件夹，包括自身，-v可查看删除进度。<br>　　rm -rf –v folder/subfolder/</p>
+</li>
+<li><p>find命令   find –name 文件名</p>
+</li>
+<li><p>du –h     #统计当前目录的大小，以直观方式展现</p>
+</li>
+<li><p>ctrl+c暂停</p>
+</li>
+<li><p>ls列目录</p>
+</li>
+<li><p>nginx<br>重启/usr/nginx/sbin/nginx -s reload<br>查询nginx主进程号ps -ef | grep nginx （master进程编号就是主进程号了。）</p>
+</li>
+<li><p>tar –zcvf test.tar.gz test</p>
+</li>
+<li><p>pwd显示当前目录</p>
+</li>
+<li><p>ln –s /目标目录 所需目录  制作软链接</p>
+</li>
+</ul>
+<pre><code>  mv aaa bbb  //将文件 aaa 更名为 bbb </code></pre>
+<ul>
+<li><p>df –h查看磁盘使用情况</p>
+</li>
+<li><p>cat /etc/issue 查看系统版本</p>
+</li>
+<li><p>在某目录下查找名为“elm.cc”的文件　find /home/lijiajia/ -name elm.cc</p>
+</li>
+<li><p>查找文件名中包含某字符(如”elm”)的文件find /home/lijiajia/ -name ‘<em>elm</em>‘</p>
+</li>
+<li><p>vi 文件名<br> a进入编辑状态 esc退出编辑状态 :q!退出 :wq保存退出</p>
+</li>
+<li><p>查看linux服务器上有几块磁盘？</p>
+<p>  lsblk</p>
+</li>
+<li><p>查看系统版本</p>
+<p>  lsb_release -a</p>
+</li>
+</ul>
+<h1 id="二、Mysql"><a href="#二、Mysql" class="headerlink" title="二、Mysql"></a>二、Mysql</h1><ul>
+<li>开启慢查询命令 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">set global log_slow_queries &#x3D; on; </span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>查看是否开启<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">show variables like &#39;log_slow_queries&#39;; </span><br></pre></td></tr></table></figure></li>
+<li>数据库的操作 <a href="http://www.cnblogs.com/xiaochaohuashengmi/archive/2011/10/18/2216279.html">http://www.cnblogs.com/xiaochaohuashengmi/archive/2011/10/18/2216279.html</a></li>
+</ul>
+<p>-如何判断Linux是32位还是64位</p>
+<pre><code> getconf LONG_BIT//如果是32位机器，则结果为32</code></pre>
+<ul>
+<li>导出全部数据库<br> mysqldump -uroot -p –all-databases &gt; sqlfile.sql</li>
+<li>查看Linux系统是32位还是64位</li>
+</ul>
+<pre><code>  getconf LONG_BIT  </code></pre>
+<ul>
+<li><p>卸载G01</p>
+<p>   /usr/local/gov_defence_agent/uninstall<br>make clean 清楚makefile目录</p>
+</li>
+</ul>
+<p>lsblk   # 查看Linux有几个磁盘</p>
+]]></content>
   </entry>
   <entry>
     <title>Photoshop</title>
@@ -37,6 +145,11 @@
 </li>
 </ul>
 ]]></content>
+  </entry>
+  <entry>
+    <title>My New Post</title>
+    <url>/2020/12/16/My-New-Post/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>酷软清单</title>
