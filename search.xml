@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>My New Post</title>
+    <url>/2020/12/16/My-New-Post/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Photoshop</title>
+    <url>/2020/12/16/Photoshop/</url>
+    <content><![CDATA[<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><ul>
+<li><p>shift+f7反选</p>
+</li>
+<li><p>ctrl+t自由变换</p>
+</li>
+<li><p>alt+del填充</p>
+</li>
+<li><p>ctrl+j复制</p>
+</li>
+<li><p>CTRL+L色阶，作用阴影部分变得更暗，高光部分变得更亮。</p>
+</li>
+<li><p>CTRL+M 通道，调黑白的，使黑的地方更黑，白的地方更白，（rgb选择一种后，用画笔分别黑白涂抹）形成鲜明的对边，便于快递选择。</p>
+</li>
+<li><p>[]调整工具大小。</p>
+</li>
+</ul>
+<h3 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h3><ul>
+<li><p>【抠图】快速选择就是常说的抠图了，他可以把照片中的物都选取出来，一般选择对象轮廓分明的用这个就可以搞定。对于一些轮廓复杂的图片用通道（选择一种通道&gt;复制通道&gt;载入选区&gt;rgb）</p>
+</li>
+<li><p>【祛痘】仿制图章，修补工具，或者滤镜-模糊-高斯模糊结合橡皮擦（勾选抹到历史纪录） 污点修复工具。</p>
+</li>
+<li><p>【瘦脸】滤镜&gt;液化，眼球变大用液化里面的膨胀工具</p>
+</li>
+<li><p>图层蒙板？？？</p>
+</li>
+<li><p>【快速P掉的人物】套索工具圈住人物，编辑-填充-内容识别。 </p>
+</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>Linux</title>
     <url>/2020/12/17/Linux/</url>
     <content><![CDATA[<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><ul>
@@ -115,44 +153,6 @@
       <tags>
         <tag>Linux</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>My New Post</title>
-    <url>/2020/12/16/My-New-Post/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Photoshop</title>
-    <url>/2020/12/16/Photoshop/</url>
-    <content><![CDATA[<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><ul>
-<li><p>shift+f7反选</p>
-</li>
-<li><p>ctrl+t自由变换</p>
-</li>
-<li><p>alt+del填充</p>
-</li>
-<li><p>ctrl+j复制</p>
-</li>
-<li><p>CTRL+L色阶，作用阴影部分变得更暗，高光部分变得更亮。</p>
-</li>
-<li><p>CTRL+M 通道，调黑白的，使黑的地方更黑，白的地方更白，（rgb选择一种后，用画笔分别黑白涂抹）形成鲜明的对边，便于快递选择。</p>
-</li>
-<li><p>[]调整工具大小。</p>
-</li>
-</ul>
-<h3 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h3><ul>
-<li><p>【抠图】快速选择就是常说的抠图了，他可以把照片中的物都选取出来，一般选择对象轮廓分明的用这个就可以搞定。对于一些轮廓复杂的图片用通道（选择一种通道&gt;复制通道&gt;载入选区&gt;rgb）</p>
-</li>
-<li><p>【祛痘】仿制图章，修补工具，或者滤镜-模糊-高斯模糊结合橡皮擦（勾选抹到历史纪录） 污点修复工具。</p>
-</li>
-<li><p>【瘦脸】滤镜&gt;液化，眼球变大用液化里面的膨胀工具</p>
-</li>
-<li><p>图层蒙板？？？</p>
-</li>
-<li><p>【快速P掉的人物】套索工具圈住人物，编辑-填充-内容识别。 </p>
-</li>
-</ul>
-]]></content>
   </entry>
   <entry>
     <title>酷软清单</title>
