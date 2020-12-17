@@ -112,6 +112,9 @@
 </ul>
 <p>lsblk   # 查看Linux有几个磁盘</p>
 ]]></content>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
   </entry>
   <entry>
     <title>My New Post</title>
