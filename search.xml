@@ -8,8 +8,7 @@
   <entry>
     <title>Photoshop学习总结</title>
     <url>/2020/12/16/Photoshop%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<p>#快捷键</p>
-<ul>
+    <content><![CDATA[<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><ul>
 <li><p>shift+f7反选</p>
 </li>
 <li><p>ctrl+t自由变换</p>
@@ -25,8 +24,7 @@
 <li><p>[]调整工具大小。</p>
 </li>
 </ul>
-<p>#常用操作</p>
-<ul>
+<h3 id="常用操作"><a href="#常用操作" class="headerlink" title="常用操作"></a>常用操作</h3><ul>
 <li><p>【抠图】快速选择就是常说的抠图了，他可以把照片中的物都选取出来，一般选择对象轮廓分明的用这个就可以搞定。对于一些轮廓复杂的图片用通道（选择一种通道&gt;复制通道&gt;载入选区&gt;rgb）</p>
 </li>
 <li><p>【祛痘】仿制图章，修补工具，或者滤镜-模糊-高斯模糊结合橡皮擦（勾选抹到历史纪录） 污点修复工具。</p>
@@ -35,7 +33,7 @@
 </li>
 <li><p>图层蒙板？？？</p>
 </li>
-<li><p>【快速P掉的人物】套索工具圈住人物，编辑-填充-内容识别。<a href="https://hexo.io/docs/one-command-deployment.html">https://hexo.io/docs/one-command-deployment.html</a>)</p>
+<li><p>【快速P掉的人物】套索工具圈住人物，编辑-填充-内容识别。 </p>
 </li>
 </ul>
 ]]></content>
