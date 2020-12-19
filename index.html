@@ -203,10 +203,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-12-17 11:20:04 / 修改时间：11:35:23" itemprop="dateCreated datePublished" datetime="2020-12-17T11:20:04+08:00">2020-12-17</time>
+              <time title="创建时间：2020-12-17 11:20:04" itemprop="dateCreated datePublished" datetime="2020-12-17T11:20:04+08:00">2020-12-17</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-12-19 09:10:14" itemprop="dateModified" datetime="2020-12-19T09:10:14+08:00">2020-12-19</time>
+              </span>
 
           
 
@@ -222,7 +228,7 @@
           <h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><ul>
 <li>排除断网</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ip a</span><br><span class="line">ping www.baidu.com</span><br><span class="line">cat  &#x2F;etc&#x2F;resolv.conf</span><br><span class="line">cat &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-eth0</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ip a</span><br><span class="line">ping www.baidu.com</span><br><span class="line">cat  &#x2F;etc&#x2F;resolv.conf</span><br><span class="line">cat &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-eth0</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p>nginx启动、停止、重启</p>
@@ -241,16 +247,12 @@
 </li>
 <li><p>fsck –y  修复磁盘</p>
 </li>
-<li><p>G01软件卸载 ps -ef | grep gov 查看是否有进程，cd /usr/local/gov_defence_agent,然后./agent_smart_tool.sh -u 用户名 -p 密码，然后./uninstall卸载</p>
-</li>
 <li><p>网站维护中，nginx加入代码rewrite ^(.*) /weihu.html break;</p>
 </li>
 <li><p>nginx去掉url中的index.php,配置Nginx.conf在你的虚拟主机下添加：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">location &#x2F; &#123;</span><br><span class="line">     if (!-e $request_filename)&#123;</span><br><span class="line">          rewrite ^&#x2F;(.*)$ &#x2F;index.php&#x2F;$1 last;</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li><p>使用top查看进程维度的CPU负载,在界面输入大小字母 P，来使监控结果按 CPU 使用率倒序排列.</p>
 </li>
-<li><p>服务器安全狗卸载</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod +x uninstall.py</span><br><span class="line">.&#x2F;uninstall.py</span><br></pre></td></tr></table></figure></li>
 <li><p>Linux下如何关闭mysql的3306端口,#vi/etc/my.cnf 在[mysqld]下添加 skip-networking<br>重启MYSQL： #service mysqld stop #service mysqldstart 即可关闭3306端口<br>本地程序可以通过mysql.sock来连接，不影响使用，既提高了访问速度，又提高了安全性，避免远程连接mysql数据库</p>
 </li>
 <li><p>linux下给目录下所有子目录和文件赋权 </p>
@@ -326,7 +328,9 @@
 <p>   /usr/local/gov_defence_agent/uninstall<br>make clean 清楚makefile目录</p>
 </li>
 </ul>
-<p>lsblk   # 查看Linux有几个磁盘</p>
+<ul>
+<li>lsblk   # 查看Linux有几个磁盘</li>
+</ul>
 
       
     </div>
@@ -530,10 +534,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-12-16 12:45:24 / 修改时间：17:16:10" itemprop="dateCreated datePublished" datetime="2020-12-16T12:45:24+08:00">2020-12-16</time>
+              <time title="创建时间：2020-12-16 12:45:24" itemprop="dateCreated datePublished" datetime="2020-12-16T12:45:24+08:00">2020-12-16</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-12-18 08:52:50" itemprop="dateModified" datetime="2020-12-18T08:52:50+08:00">2020-12-18</time>
+              </span>
 
           
 
@@ -597,6 +607,7 @@
 <li>KeePass</li>
 <li>网易有道词典</li>
 <li>Xdown</li>
+<li>PicGo</li>
 </ul>
 
       

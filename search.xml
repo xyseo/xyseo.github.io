@@ -6,7 +6,7 @@
     <content><![CDATA[<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><ul>
 <li>排除断网</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ip a</span><br><span class="line">ping www.baidu.com</span><br><span class="line">cat  &#x2F;etc&#x2F;resolv.conf</span><br><span class="line">cat &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-eth0</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ip a</span><br><span class="line">ping www.baidu.com</span><br><span class="line">cat  &#x2F;etc&#x2F;resolv.conf</span><br><span class="line">cat &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-eth0</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p>nginx启动、停止、重启</p>
@@ -25,16 +25,12 @@
 </li>
 <li><p>fsck –y  修复磁盘</p>
 </li>
-<li><p>G01软件卸载 ps -ef | grep gov 查看是否有进程，cd /usr/local/gov_defence_agent,然后./agent_smart_tool.sh -u 用户名 -p 密码，然后./uninstall卸载</p>
-</li>
 <li><p>网站维护中，nginx加入代码rewrite ^(.*) /weihu.html break;</p>
 </li>
 <li><p>nginx去掉url中的index.php,配置Nginx.conf在你的虚拟主机下添加：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">location &#x2F; &#123;</span><br><span class="line">     if (!-e $request_filename)&#123;</span><br><span class="line">          rewrite ^&#x2F;(.*)$ &#x2F;index.php&#x2F;$1 last;</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li><p>使用top查看进程维度的CPU负载,在界面输入大小字母 P，来使监控结果按 CPU 使用率倒序排列.</p>
 </li>
-<li><p>服务器安全狗卸载</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chmod +x uninstall.py</span><br><span class="line">.&#x2F;uninstall.py</span><br></pre></td></tr></table></figure></li>
 <li><p>Linux下如何关闭mysql的3306端口,#vi/etc/my.cnf 在[mysqld]下添加 skip-networking<br>重启MYSQL： #service mysqld stop #service mysqldstart 即可关闭3306端口<br>本地程序可以通过mysql.sock来连接，不影响使用，既提高了访问速度，又提高了安全性，避免远程连接mysql数据库</p>
 </li>
 <li><p>linux下给目录下所有子目录和文件赋权 </p>
@@ -110,7 +106,9 @@
 <p>   /usr/local/gov_defence_agent/uninstall<br>make clean 清楚makefile目录</p>
 </li>
 </ul>
-<p>lsblk   # 查看Linux有几个磁盘</p>
+<ul>
+<li>lsblk   # 查看Linux有几个磁盘</li>
+</ul>
 ]]></content>
       <tags>
         <tag>Linux</tag>
@@ -220,6 +218,7 @@
 <li>KeePass</li>
 <li>网易有道词典</li>
 <li>Xdown</li>
+<li>PicGo</li>
 </ul>
 ]]></content>
   </entry>
