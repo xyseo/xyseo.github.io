@@ -164,9 +164,9 @@
 ]]></content>
   </entry>
   <entry>
-    <title>酷软清单</title>
+    <title>常用javascrpt整理</title>
     <url>/2020/12/16/%E5%B8%B8%E7%94%A8javascrpt%E6%95%B4%E7%90%86/</url>
-    <content><![CDATA[<ul>
+    <content><![CDATA[<h3 id="常用JavaScript"><a href="#常用JavaScript" class="headerlink" title="常用JavaScript"></a>常用JavaScript</h3><ul>
 <li><p>[jquery.SuperSlide]: <a href="http://www.superslide2.com/">http://www.superslide2.com/</a></p>
 </li>
 <li><p>jquery.tab.js   </p>
