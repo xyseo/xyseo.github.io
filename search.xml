@@ -194,6 +194,8 @@
 <ul>
 <li>lsblk   # 查看Linux有几个磁盘</li>
 </ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">//批量的更换域名mysql数据库语句</span><br><span class="line"><span class="keyword">UPDATE</span> newsdata <span class="keyword">set</span> <span class="keyword">content</span>=<span class="keyword">replace</span>(<span class="keyword">content</span>, <span class="string">&#x27;http://www.***.gov.cn&#x27;</span>, <span class="string">&#x27;http://***.***.gov.cn&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <tags>
         <tag>Linux</tag>
