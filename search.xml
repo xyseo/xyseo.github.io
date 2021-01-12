@@ -1,100 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Javascript</title>
-    <url>/2020/12/23/Javascrpt/</url>
-    <content><![CDATA[<h3 id="常用JS"><a href="#常用JS" class="headerlink" title="常用JS"></a>常用JS</h3><ul>
-<li><p>[jquery.SuperSlide]: <a href="http://www.superslide2.com/">http://www.superslide2.com/</a></p>
-</li>
-<li><p>jquery.tab.js   </p>
-</li>
-<li><p>jQuery Validate   </p>
-</li>
-<li><p>TouchSlide</p>
-</li>
-<li><p>Lightbox </p>
-</li>
-<li><p><a href="http://www.swiper.com.cn/">http://www.swiper.com.cn/</a></p>
-</li>
-<li><p>validform.js</p>
-</li>
-<li><p>前端网址导航 <a href="http://www.h-ui.net/site.shtml">http://www.h-ui.net/site.shtml</a></p>
-</li>
-<li><p>jquery.fancybox</p>
-</li>
-<li><p>vue <a href="https://cn.vuejs.org/">https://cn.vuejs.org</a></p>
-</li>
-<li><p>jQuery瀑布流插件masonry</p>
-</li>
-<li><p>JQuery插件supersized.js实现背景图片淡入浅出</p>
-</li>
-<li><p>前端必备插件之纯原生JS的瀑布流插件Macy.js</p>
-</li>
-<li><p>jquery.form.js 表单的ajax提交</p>
-</li>
-<li><p>jquery.lazyload.js 图片的延迟加载</p>
-</li>
-<li><p>jQuery.validate.js 表单验证插件</p>
-</li>
-<li><p>打字机效果<a href="https://github.com/mattboldt/typed.js/">https://github.com/mattboldt/typed.js/</a></p>
-</li>
-<li><p>H-ui 前端框架  <a href="http://www.h-ui.net/index.shtml">http://www.h-ui.net/index.shtml</a></p>
-</li>
-<li><p>ADMINLTE <a href="https://adminlte.io/">https://adminlte.io/</a></p>
-</li>
-<li><p>ace_admin  <a href="http://ace.jeka.by/">http://ace.jeka.by/</a></p>
-</li>
-<li><p>layuicms <a href="http://layuicms.com/">http://layuicms.com/</a></p>
-</li>
-<li><p>X-admin</p>
-</li>
-<li><p>beyondadmin</p>
-</li>
-<li><p><a href="http://layer.layui.com/">http://layer.layui.com/</a></p>
-</li>
-<li><p>metisMenu</p>
-</li>
-<li><p>字体库和CSS框架 <a href="https://fontawesome.dashgame.com/">https://fontawesome.dashgame.com/</a></p>
-</li>
-<li><p>flowplayer jwplayer ckplayer dplayer <a href="http://dplayer.js.org/">http://dplayer.js.org/</a></p>
-</li>
-<li><p>Aos.js</p>
-</li>
-</ul>
-<h6 id=""><a href="#" class="headerlink" title=""></a></h6><figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">&lt;script <span class="keyword">type</span>=<span class="string">&quot;text/javascript&quot;</span> src=<span class="string">&quot;http://api.map.baidu.com/api?v=2.0&amp;amp;ak=71Vco0Yx0zd5szFS9b5HfYAZ&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var map=<span class="keyword">new</span> BMap.<span class="constructor">Map(<span class="string">&quot;map&quot;</span>)</span>;</span><br><span class="line">    var point=<span class="keyword">new</span> BMap.<span class="constructor">Point(114.139093,32.133128)</span>;</span><br><span class="line">    map.center<span class="constructor">AndZoom(<span class="params">point</span>,17)</span>;</span><br><span class="line">    map.enable<span class="constructor">ScrollWheelZoom()</span>;   <span class="comment">//开始滚轮控制。</span></span><br><span class="line">    map.add<span class="constructor">Control(<span class="params">new</span> BMap.NavigationControl()</span>);  <span class="comment">//控件</span></span><br><span class="line">    var marker1=<span class="keyword">new</span> BMap.<span class="constructor">Marker(<span class="params">point</span>)</span>;   <span class="comment">//创建标注</span></span><br><span class="line">    map.add<span class="constructor">Overlay(<span class="params">marker1</span>)</span>;</span><br><span class="line">    marker1.add<span class="constructor">EventListener(<span class="string">&quot;mouseover&quot;</span>,<span class="params">function</span>()</span>&#123;</span><br><span class="line">        map.<span class="keyword">open</span><span class="constructor">InfoWindow(<span class="params">infoWindow</span>,<span class="params">marker1</span>.<span class="params">getPosition</span>()</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">    marker1.add<span class="constructor">EventListener(<span class="string">&quot;mouseout&quot;</span>,<span class="params">function</span>()</span>&#123;</span><br><span class="line">        map.close<span class="constructor">InfoWindow(<span class="params">infoWindow</span>,<span class="params">marker1</span>.<span class="params">getPosition</span>()</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="comment">//alert(map.getCenter(116.404,39.915))</span></span><br><span class="line">    var opts1=&#123;</span><br><span class="line">        width:<span class="number">250</span>,</span><br><span class="line">        height:<span class="number">100</span>,</span><br><span class="line">        title:<span class="string">&quot;&lt;a style=&#x27;color:#666;&#x27;&gt;电话：010-6666666&lt;br&gt;地址：#&lt;/a&gt;&quot;</span></span><br><span class="line">    &#125;;</span><br><span class="line">    var infoWindow=<span class="keyword">new</span> BMap.<span class="constructor">InfoWindow(<span class="string">&quot;#&quot;</span>,<span class="params">opts1</span>)</span>;</span><br><span class="line">    map.<span class="keyword">open</span><span class="constructor">InfoWindow(<span class="params">infoWindow</span>,<span class="params">marker1</span>.<span class="params">getPosition</span>()</span>);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;map&quot;</span> id=<span class="string">&quot;map&quot;</span> &gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><pre><code>.dh&#123; display:inline-block;-webkit-animation:zooming 1s infinite; -moz-animation:zooming 1s infinite; -o-animation:zooming 1s infinite; animation:zooming 1s infinite;&#125;
-@keyframes zooming&#123;
-    0%      &#123;transform: scale(.8);&#125; 
-    50%     &#123;transform: scale(1.05); text-shadow:0 0 5px white;&#125;
-    100%    &#123;transform: scale(.8);&#125;
-&#125;
-@-webkit-keyframes zooming&#123;
-     0%      &#123;-webkit-transform: scale(.8);&#125; 
-     50%     &#123;-webkit-transform: scale(1.05); text-shadow:0 0 5px white; &#125;
-     100%    &#123;-webkit-transform: scale(.8);&#125;&#125;
-@-moz-keyframes zooming&#123;
-     0%      &#123;-moz-transform: scale(.8);&#125; 
-     50%     &#123;-moz-transform: scale(1.05); text-shadow:0 0 5px white; &#125;
-     100%    &#123;-moz-transform: scale(.8);&#125;&#125;
-
-@-o-keyframes zooming&#123;
-    0%      &#123;-o-transform: scale(.8);&#125; 
-    50%     &#123;-o-transform: scale(1.05); text-shadow:0 0 5px white;&#125;
-    100%    &#123;-o-transform: scale(.8);&#125;&#125;</code></pre>
-<p>​    </p>
-<h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><figure class="highlight http"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"> &lt;a href=&quot;#&quot; class=&quot;class_outer&quot;&gt; &lt;img src=&quot;1.jpg&quot; width=&quot;546&quot; height=&quot;353&quot; border=&quot;0&quot; /&gt; &lt;span class=&quot;class_cover&quot;&gt;亲，透明遮罩会了吗？&lt;/span&gt; &lt;/a&gt; </span><br><span class="line"></span><br><span class="line">  .class_outer &#123;</span><br><span class="line"> display: block;</span><br><span class="line"> width: 546px;</span><br><span class="line"><span class="attribute">height</span>: 276px;</span><br><span class="line"> margin: 10px auto;</span><br><span class="line"> position: relative;</span><br><span class="line"><span class="attribute">overflow</span>: hidden;</span><br><span class="line"> &#125;</span><br><span class="line"> .class_cover &#123;</span><br><span class="line"><span class="attribute">width</span>: 100%;</span><br><span class="line"> height: 50px;</span><br><span class="line"> line-height: 50px;</span><br><span class="line"> padding-left: 5px;</span><br><span class="line"> background-color: rgba(0, 0, 0, .50);</span><br><span class="line"> color: #FFFFFF;</span><br><span class="line"> font-size: 26px;</span><br><span class="line"> position: absolute;</span><br><span class="line"> left: 0px;</span><br><span class="line"> bottom: 0px;</span><br><span class="line"> &#125; </span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h1 id="-3"><a href="#-3" class="headerlink" title=""></a></h1><h1 id="-4"><a href="#-4" class="headerlink" title=""></a></h1><blockquote>
-<p>需要加载jquery </p>
-</blockquote>
-<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"> <span class="selector-id">#back-top</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">60px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">60px</span>;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#FF9C01</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">60px</span>;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight http"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">$(function () &#123;</span><br><span class="line"></span><br><span class="line"> //先将#back-top隐藏</span><br><span class="line"> $(&#x27;#back-top&#x27;).hide();</span><br><span class="line"></span><br><span class="line"> //当滚动条的垂直位置距顶部100像素一下时，跳转链接出现，否则消失</span><br><span class="line"> $(window).scroll(function () &#123;</span><br><span class="line">  if ($(window).scrollTop() &gt; 100) &#123;</span><br><span class="line">   $(&#x27;#back-top&#x27;).fadeIn(1000);</span><br><span class="line">  &#125; else &#123;</span><br><span class="line">   $(&quot;#back-top&quot;).fadeOut(1000);</span><br><span class="line">  &#125;</span><br><span class="line"> &#125;);</span><br><span class="line"></span><br><span class="line"> //点击跳转链接，滚动条跳到0的位置，页面移动速度是1000</span><br><span class="line"> $(&quot;#back-top&quot;).click(function () &#123;</span><br><span class="line"></span><br><span class="line">  $(&#x27;body,html&#x27;).animate(&#123;</span><br><span class="line">   scrollTop: &#x27;0&#x27;</span><br><span class="line">  &#125;, 1000);</span><br><span class="line">  return false; //防止默认事件行为</span><br><span class="line"> &#125;)</span><br><span class="line"></span><br><span class="line"> &#125;);</span><br><span class="line"> </span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
     <title>Linux</title>
     <url>/2020/12/17/Linux/</url>
     <content><![CDATA[<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><ul>
@@ -237,20 +143,14 @@
 </li>
 </ul>
 <h3 id="素材网站"><a href="#素材网站" class="headerlink" title="素材网站"></a>素材网站</h3><ul>
-<li><p>[pngimg]: <a href="http://pngimg.com/">http://pngimg.com</a></p>
-</li>
-<li><p>[cleanpng]:<a href="https://www.cleanpng.com/">https://www.cleanpng.com</a></p>
-</li>
-<li><p>[pngall]:<a href="https://www.pngall.com/">https://www.pngall.com</a></p>
-</li>
-<li><p>[stickpng]:<a href="https://www.stickpng.com/">https://www.stickpng.com</a></p>
-</li>
-<li><p>[图片背景消除]:<a href="https://www.remove.bg/zh%E5%9B%BE">https://www.remove.bg/zh图</a></p>
-</li>
-<li><p>[ 搞定抠图 ]: <a href="https://koutu.gaoding.com/">https://koutu.gaoding.com/</a></p>
-</li>
-<li><p>[ BgRemover ]: <a href="https://www.aigei.com/bgremover/">https://www.aigei.com/bgremover/</a></p>
-</li>
+<li>[pngimg]: <a href="http://pngimg.com/">http://pngimg.com</a></li>
+<li>[cleanpng]:<a href="https://www.cleanpng.com/">https://www.cleanpng.com</a></li>
+<li>[pngall]:<a href="https://www.pngall.com/">https://www.pngall.com</a></li>
+<li>[stickpng]:<a href="https://www.stickpng.com/">https://www.stickpng.com</a></li>
+<li>[图片背景消除]:<a href="https://www.remove.bg/zh%E5%9B%BE">https://www.remove.bg/zh图</a></li>
+<li>[ 搞定抠图 ]: <a href="https://koutu.gaoding.com/">https://koutu.gaoding.com/</a></li>
+<li>[ BgRemover ]: <a href="https://www.aigei.com/bgremover/">https://www.aigei.com/bgremover/</a></li>
+<li>[ iLoveIMG ]:<a href="https://www.iloveimg.com/zh-cn">https://www.iloveimg.com/zh-cn</a>    “”图像文件在线编辑工具””</li>
 </ul>
 ]]></content>
       <categories>
@@ -333,5 +233,99 @@
 <li>NATAPP</li>
 </ul>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Javascript</title>
+    <url>/2020/12/23/Javascrpt/</url>
+    <content><![CDATA[<h3 id="常用JS"><a href="#常用JS" class="headerlink" title="常用JS"></a>常用JS</h3><ul>
+<li><p>[jquery.SuperSlide]: <a href="http://www.superslide2.com/">http://www.superslide2.com/</a></p>
+</li>
+<li><p>jquery.tab.js   </p>
+</li>
+<li><p>jQuery Validate   </p>
+</li>
+<li><p>TouchSlide</p>
+</li>
+<li><p>Lightbox </p>
+</li>
+<li><p><a href="http://www.swiper.com.cn/">http://www.swiper.com.cn/</a></p>
+</li>
+<li><p>validform.js</p>
+</li>
+<li><p>前端网址导航 <a href="http://www.h-ui.net/site.shtml">http://www.h-ui.net/site.shtml</a></p>
+</li>
+<li><p>jquery.fancybox</p>
+</li>
+<li><p>vue <a href="https://cn.vuejs.org/">https://cn.vuejs.org</a></p>
+</li>
+<li><p>jQuery瀑布流插件masonry</p>
+</li>
+<li><p>JQuery插件supersized.js实现背景图片淡入浅出</p>
+</li>
+<li><p>前端必备插件之纯原生JS的瀑布流插件Macy.js</p>
+</li>
+<li><p>jquery.form.js 表单的ajax提交</p>
+</li>
+<li><p>jquery.lazyload.js 图片的延迟加载</p>
+</li>
+<li><p>jQuery.validate.js 表单验证插件</p>
+</li>
+<li><p>打字机效果<a href="https://github.com/mattboldt/typed.js/">https://github.com/mattboldt/typed.js/</a></p>
+</li>
+<li><p>H-ui 前端框架  <a href="http://www.h-ui.net/index.shtml">http://www.h-ui.net/index.shtml</a></p>
+</li>
+<li><p>ADMINLTE <a href="https://adminlte.io/">https://adminlte.io/</a></p>
+</li>
+<li><p>ace_admin  <a href="http://ace.jeka.by/">http://ace.jeka.by/</a></p>
+</li>
+<li><p>layuicms <a href="http://layuicms.com/">http://layuicms.com/</a></p>
+</li>
+<li><p>X-admin</p>
+</li>
+<li><p>beyondadmin</p>
+</li>
+<li><p><a href="http://layer.layui.com/">http://layer.layui.com/</a></p>
+</li>
+<li><p>metisMenu</p>
+</li>
+<li><p>字体库和CSS框架 <a href="https://fontawesome.dashgame.com/">https://fontawesome.dashgame.com/</a></p>
+</li>
+<li><p>flowplayer jwplayer ckplayer dplayer <a href="http://dplayer.js.org/">http://dplayer.js.org/</a></p>
+</li>
+<li><p>Aos.js</p>
+</li>
+</ul>
+<h6 id=""><a href="#" class="headerlink" title=""></a></h6><figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">&lt;script <span class="keyword">type</span>=<span class="string">&quot;text/javascript&quot;</span> src=<span class="string">&quot;http://api.map.baidu.com/api?v=2.0&amp;amp;ak=71Vco0Yx0zd5szFS9b5HfYAZ&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var map=<span class="keyword">new</span> BMap.<span class="constructor">Map(<span class="string">&quot;map&quot;</span>)</span>;</span><br><span class="line">    var point=<span class="keyword">new</span> BMap.<span class="constructor">Point(114.139093,32.133128)</span>;</span><br><span class="line">    map.center<span class="constructor">AndZoom(<span class="params">point</span>,17)</span>;</span><br><span class="line">    map.enable<span class="constructor">ScrollWheelZoom()</span>;   <span class="comment">//开始滚轮控制。</span></span><br><span class="line">    map.add<span class="constructor">Control(<span class="params">new</span> BMap.NavigationControl()</span>);  <span class="comment">//控件</span></span><br><span class="line">    var marker1=<span class="keyword">new</span> BMap.<span class="constructor">Marker(<span class="params">point</span>)</span>;   <span class="comment">//创建标注</span></span><br><span class="line">    map.add<span class="constructor">Overlay(<span class="params">marker1</span>)</span>;</span><br><span class="line">    marker1.add<span class="constructor">EventListener(<span class="string">&quot;mouseover&quot;</span>,<span class="params">function</span>()</span>&#123;</span><br><span class="line">        map.<span class="keyword">open</span><span class="constructor">InfoWindow(<span class="params">infoWindow</span>,<span class="params">marker1</span>.<span class="params">getPosition</span>()</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">    marker1.add<span class="constructor">EventListener(<span class="string">&quot;mouseout&quot;</span>,<span class="params">function</span>()</span>&#123;</span><br><span class="line">        map.close<span class="constructor">InfoWindow(<span class="params">infoWindow</span>,<span class="params">marker1</span>.<span class="params">getPosition</span>()</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="comment">//alert(map.getCenter(116.404,39.915))</span></span><br><span class="line">    var opts1=&#123;</span><br><span class="line">        width:<span class="number">250</span>,</span><br><span class="line">        height:<span class="number">100</span>,</span><br><span class="line">        title:<span class="string">&quot;&lt;a style=&#x27;color:#666;&#x27;&gt;电话：010-6666666&lt;br&gt;地址：#&lt;/a&gt;&quot;</span></span><br><span class="line">    &#125;;</span><br><span class="line">    var infoWindow=<span class="keyword">new</span> BMap.<span class="constructor">InfoWindow(<span class="string">&quot;#&quot;</span>,<span class="params">opts1</span>)</span>;</span><br><span class="line">    map.<span class="keyword">open</span><span class="constructor">InfoWindow(<span class="params">infoWindow</span>,<span class="params">marker1</span>.<span class="params">getPosition</span>()</span>);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;map&quot;</span> id=<span class="string">&quot;map&quot;</span> &gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="-1"><a href="#-1" class="headerlink" title=""></a></h1><pre><code>.dh&#123; display:inline-block;-webkit-animation:zooming 1s infinite; -moz-animation:zooming 1s infinite; -o-animation:zooming 1s infinite; animation:zooming 1s infinite;&#125;
+@keyframes zooming&#123;
+    0%      &#123;transform: scale(.8);&#125; 
+    50%     &#123;transform: scale(1.05); text-shadow:0 0 5px white;&#125;
+    100%    &#123;transform: scale(.8);&#125;
+&#125;
+@-webkit-keyframes zooming&#123;
+     0%      &#123;-webkit-transform: scale(.8);&#125; 
+     50%     &#123;-webkit-transform: scale(1.05); text-shadow:0 0 5px white; &#125;
+     100%    &#123;-webkit-transform: scale(.8);&#125;&#125;
+@-moz-keyframes zooming&#123;
+     0%      &#123;-moz-transform: scale(.8);&#125; 
+     50%     &#123;-moz-transform: scale(1.05); text-shadow:0 0 5px white; &#125;
+     100%    &#123;-moz-transform: scale(.8);&#125;&#125;
+
+@-o-keyframes zooming&#123;
+    0%      &#123;-o-transform: scale(.8);&#125; 
+    50%     &#123;-o-transform: scale(1.05); text-shadow:0 0 5px white;&#125;
+    100%    &#123;-o-transform: scale(.8);&#125;&#125;</code></pre>
+<p>​    </p>
+<h1 id="-2"><a href="#-2" class="headerlink" title=""></a></h1><figure class="highlight http"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"> &lt;a href=&quot;#&quot; class=&quot;class_outer&quot;&gt; &lt;img src=&quot;1.jpg&quot; width=&quot;546&quot; height=&quot;353&quot; border=&quot;0&quot; /&gt; &lt;span class=&quot;class_cover&quot;&gt;亲，透明遮罩会了吗？&lt;/span&gt; &lt;/a&gt; </span><br><span class="line"></span><br><span class="line">  .class_outer &#123;</span><br><span class="line"> display: block;</span><br><span class="line"> width: 546px;</span><br><span class="line"><span class="attribute">height</span>: 276px;</span><br><span class="line"> margin: 10px auto;</span><br><span class="line"> position: relative;</span><br><span class="line"><span class="attribute">overflow</span>: hidden;</span><br><span class="line"> &#125;</span><br><span class="line"> .class_cover &#123;</span><br><span class="line"><span class="attribute">width</span>: 100%;</span><br><span class="line"> height: 50px;</span><br><span class="line"> line-height: 50px;</span><br><span class="line"> padding-left: 5px;</span><br><span class="line"> background-color: rgba(0, 0, 0, .50);</span><br><span class="line"> color: #FFFFFF;</span><br><span class="line"> font-size: 26px;</span><br><span class="line"> position: absolute;</span><br><span class="line"> left: 0px;</span><br><span class="line"> bottom: 0px;</span><br><span class="line"> &#125; </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="-3"><a href="#-3" class="headerlink" title=""></a></h1><h1 id="-4"><a href="#-4" class="headerlink" title=""></a></h1><blockquote>
+<p>需要加载jquery </p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"> <span class="selector-id">#back-top</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: fixed;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">60px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">60px</span>;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#FF9C01</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">60px</span>;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight http"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">$(function () &#123;</span><br><span class="line"></span><br><span class="line"> //先将#back-top隐藏</span><br><span class="line"> $(&#x27;#back-top&#x27;).hide();</span><br><span class="line"></span><br><span class="line"> //当滚动条的垂直位置距顶部100像素一下时，跳转链接出现，否则消失</span><br><span class="line"> $(window).scroll(function () &#123;</span><br><span class="line">  if ($(window).scrollTop() &gt; 100) &#123;</span><br><span class="line">   $(&#x27;#back-top&#x27;).fadeIn(1000);</span><br><span class="line">  &#125; else &#123;</span><br><span class="line">   $(&quot;#back-top&quot;).fadeOut(1000);</span><br><span class="line">  &#125;</span><br><span class="line"> &#125;);</span><br><span class="line"></span><br><span class="line"> //点击跳转链接，滚动条跳到0的位置，页面移动速度是1000</span><br><span class="line"> $(&quot;#back-top&quot;).click(function () &#123;</span><br><span class="line"></span><br><span class="line">  $(&#x27;body,html&#x27;).animate(&#123;</span><br><span class="line">   scrollTop: &#x27;0&#x27;</span><br><span class="line">  &#125;, 1000);</span><br><span class="line">  return false; //防止默认事件行为</span><br><span class="line"> &#125;)</span><br><span class="line"></span><br><span class="line"> &#125;);</span><br><span class="line"> </span><br></pre></td></tr></table></figure>]]></content>
   </entry>
 </search>
