@@ -477,6 +477,8 @@
 </li>
 <li><p>Aos.js</p>
 </li>
+<li><p>zTree <a target="_blank" rel="noopener" href="http://www.treejs.cn/">http://www.treejs.cn/</a></p>
+</li>
 </ul>
 <h6 id=""><a href="#" class="headerlink" title=""></a></h6><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="keyword">type</span>=<span class="string">&quot;text/javascript&quot;</span> src=<span class="string">&quot;http://api.map.baidu.com/api?v=2.0&amp;amp;ak=71Vco0Yx0zd5szFS9b5HfYAZ&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    var map=<span class="keyword">new</span> BMap.<span class="constructor">Map(<span class="string">&quot;map&quot;</span>)</span>;</span><br><span class="line">    var point=<span class="keyword">new</span> BMap.<span class="constructor">Point(114.139093,32.133128)</span>;</span><br><span class="line">    map.center<span class="constructor">AndZoom(<span class="params">point</span>,17)</span>;</span><br><span class="line">    map.enable<span class="constructor">ScrollWheelZoom()</span>;   <span class="comment">//开始滚轮控制。</span></span><br><span class="line">    map.add<span class="constructor">Control(<span class="params">new</span> BMap.NavigationControl()</span>);  <span class="comment">//控件</span></span><br><span class="line">    var marker1=<span class="keyword">new</span> BMap.<span class="constructor">Marker(<span class="params">point</span>)</span>;   <span class="comment">//创建标注</span></span><br><span class="line">    map.add<span class="constructor">Overlay(<span class="params">marker1</span>)</span>;</span><br><span class="line">    marker1.add<span class="constructor">EventListener(<span class="string">&quot;mouseover&quot;</span>,<span class="params">function</span>()</span>&#123;</span><br><span class="line">        map.<span class="keyword">open</span><span class="constructor">InfoWindow(<span class="params">infoWindow</span>,<span class="params">marker1</span>.<span class="params">getPosition</span>()</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">    marker1.add<span class="constructor">EventListener(<span class="string">&quot;mouseout&quot;</span>,<span class="params">function</span>()</span>&#123;</span><br><span class="line">        map.close<span class="constructor">InfoWindow(<span class="params">infoWindow</span>,<span class="params">marker1</span>.<span class="params">getPosition</span>()</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="comment">//alert(map.getCenter(116.404,39.915))</span></span><br><span class="line">    var opts1=&#123;</span><br><span class="line">        width:<span class="number">250</span>,</span><br><span class="line">        height:<span class="number">100</span>,</span><br><span class="line">        title:<span class="string">&quot;&lt;a style=&#x27;color:#666;&#x27;&gt;电话：010-6666666&lt;br&gt;地址：#&lt;/a&gt;&quot;</span></span><br><span class="line">    &#125;;</span><br><span class="line">    var infoWindow=<span class="keyword">new</span> BMap.<span class="constructor">InfoWindow(<span class="string">&quot;#&quot;</span>,<span class="params">opts1</span>)</span>;</span><br><span class="line">    map.<span class="keyword">open</span><span class="constructor">InfoWindow(<span class="params">infoWindow</span>,<span class="params">marker1</span>.<span class="params">getPosition</span>()</span>);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;div <span class="keyword">class</span>=<span class="string">&quot;map&quot;</span> id=<span class="string">&quot;map&quot;</span> &gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
@@ -1161,7 +1163,7 @@
         
           
             <h2 id="编程开发"><a href="#编程开发" class="headerlink" title="编程开发"></a>编程开发</h2><ul>
-<li><p>notepad++(YaHei.Consolas.1.12.ttf 编程字体、思源黑体/宋体、Noto Serif黑体/宋体、explorer)</p>
+<li><p>notepad++(YaHei.Consolas.1.12.ttf，Source-Code-Pro编程字体、思源黑体/宋体、Noto Serif黑体/宋体、explorer)</p>
 </li>
 <li><p>vscode(sftp)</p>
 </li>
@@ -1172,7 +1174,7 @@
 </li>
 <li><p>Chrome（集装箱、fehelper、uBlock Origin、Listen 1、Onetab、Infinity、Imagus）</p>
 </li>
-<li><p>v2rayN-Core</p>
+<li><p>phpstrom</p>
 </li>
 <li><p>Visual Studio Code</p>
 </li>
@@ -1193,6 +1195,8 @@
 <li><p>云锁</p>
 </li>
 <li><p>GIT、Npm、Webpack</p>
+</li>
+<li><p>Honeyview（图片查看器）</p>
 </li>
 </ul>
 <h2 id="办公软件"><a href="#办公软件" class="headerlink" title="办公软件"></a>办公软件</h2><ul>
